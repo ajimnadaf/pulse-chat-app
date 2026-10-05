@@ -1,0 +1,33 @@
+:root{--side:#0f3d3e;--ink:#17252a;--muted:#667a80;--line:#d8e2e3;--bg:#f3f7f7;--accent:#0f766e}
+*{box-sizing:border-box}html,body,#root{height:100%}body{margin:0;font:15px/1.5 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{margin:0}h1,h2{font-family:Georgia,serif}input{font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:6px;width:100%}
+button{font:inherit;cursor:pointer}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.primary{background:var(--accent);color:#fff;border:0;padding:9px 14px;border-radius:6px;white-space:nowrap}.primary:disabled{opacity:.5;cursor:default}
+.link{background:none;border:0;color:#a9c3c4;text-decoration:underline;margin-left:auto}.muted{color:var(--muted)}.center{text-align:center}
+.error{background:#fde8e6;color:#b42318;padding:8px 12px;border-radius:6px;margin:8px 16px}
+.auth{min-height:100vh;display:grid;place-items:center;padding:16px}.auth form{background:#fff;padding:32px;border-radius:10px;width:360px;display:grid;gap:12px;border:1px solid var(--line)}
+.auth h1{font-size:34px}.auth .link{color:var(--muted);margin:0}label{display:grid;gap:4px;font-weight:600;font-size:13px}
+.shell{display:grid;grid-template-columns:260px 1fr;height:100%}
+aside{background:var(--side);color:#dcecec;padding:18px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+aside h3{font-size:13px;color:#8fb3b3;font-weight:600;margin-top:8px}aside nav{display:grid;gap:2px}
+aside form{display:grid;gap:6px}aside ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;flex:1}aside li{display:flex;align-items:center;gap:8px}
+.me{display:flex;align-items:center;gap:8px;border-top:1px solid #25595a;padding-top:10px}.dot{width:9px;height:9px;border-radius:50%;background:#d97706}.dot.ok{background:#22c55e}
+.av{width:26px;height:26px;border-radius:50%;display:inline-grid;place-items:center;color:#fff;font-size:12px;font-weight:700;flex:none}
+main{display:flex;flex-direction:column;min-width:0;height:100%}header{padding:14px 20px;border-bottom:1px solid var(--line);background:#fff}header h1{font-size:22px}
+.feed{flex:1;overflow:auto;padding:16px 20px;display:flex;flex-direction:column;gap:2px}
+.msg{max-width:70%}.msg.mine{align-self:flex-end}.who{display:flex;gap:8px;align-items:center;margin-top:10px}.who small{color:var(--muted)}
+.typing{height:22px;padding:0 20px;color:var(--muted);font-size:13px;font-style:italic}
+.composer{display:flex;gap:8px;padding:12px 20px;background:#fff;border-top:1px solid var(--line)}
+@media(max-width:760px){.shell{grid-template-columns:1fr;grid-template-rows:auto 1fr}aside{max-height:36vh}}
+.room{display:flex;align-items:center;gap:8px;background:none;border:0;color:inherit;text-align:left;padding:7px 10px;border-radius:6px}
+.room:hover,.room.on{background:#1b5556}.room.dm{padding:5px 10px}.grow{flex:1}.hint{color:#8fb3b3}
+.badge{margin-left:auto;background:#f59e0b;color:#1a1a1a;border-radius:10px;padding:0 7px;font-size:12px;font-weight:700}
+.dot.off{background:#52797a}
+.bubble{position:relative;margin:2px 0 0 34px;background:#fff;border:1px solid var(--line);padding:6px 11px;border-radius:10px;width:fit-content;max-width:100%;word-break:break-word}
+.bubble p{margin:0;white-space:pre-wrap}.msg.mine .bubble{background:var(--accent);color:#fff;border-color:var(--accent)}
+.gone{color:var(--muted);font-size:13px}.msg.mine .gone{color:#cfe9e6}.ed{opacity:.7;margin-left:6px}
+.shot{display:block;max-width:260px;max-height:220px;border-radius:6px;margin-top:4px}.file{color:inherit;display:block;margin-top:4px}
+.acts{position:absolute;top:-12px;right:6px;display:none;background:#fff;border:1px solid var(--line);border-radius:6px}
+.bubble:hover .acts,.bubble:focus-within .acts{display:flex}.acts button{background:none;border:0;padding:0 7px;color:var(--ink)}
+.editf{display:flex;gap:6px}.editf input{padding:4px 8px}.mini{padding:2px 8px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.clip{background:#fff;border:1px solid var(--line);border-radius:6px;padding:0 12px;font-size:18px}.clip:disabled{opacity:.5}
